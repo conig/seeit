@@ -17,11 +17,6 @@ csv <- function(x){
 #' @param path path to dir. Defaults to the current working directory
 #' @export
 
-
-# dir <- function(path = NULL){
-#  path <- gsub("\\(", "\\\\(", path)
-#   path <- gsub("\\)", "\\\\)", path)
-#
-#
-#   system2("open", path)
-# }
+ dir <- function(path = getwd()){
+  system2("open", shQuote(path))
+ }
