@@ -11,12 +11,12 @@ csv <- function(x){
   system2("open", shQuote(path))
 }
 
-#' dr
+#' d
 #'
 #' Opens a specified directory in explorer
 #' @param path path to dir. Defaults to the current working directory
 #' @export
 
- dr <- function(path = getwd()){
+ d <- function(path = getwd()){
   system2("open", shQuote(path))
  }
