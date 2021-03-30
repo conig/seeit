@@ -18,5 +18,10 @@ csv <- function(x){
 #' @export
 
 
-dir <- function(path = getwd()){
-  system2("open", path)
+# dir <- function(path = NULL){
+#  path <- gsub("\\(", "\\\\(", path)
+#   path <- gsub("\\)", "\\\\)", path)
+#
+#
+#   system2("open", path)
+# }
