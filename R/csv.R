@@ -18,5 +18,5 @@ csv <- function(x){
 #' @export
 
  d <- function(path = getwd()){
-  system2("open", shQuote(path))
+  system2("open", shQuote(path), invisible = FALSE)
  }
