@@ -16,5 +16,5 @@ remotes::install_github("conig/seeit")
 To operate, try out this line of code:
 
 ``` r
-seeit::csv("mtcars")
+seeit::csv(mtcars)
 ```
