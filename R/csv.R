@@ -10,3 +10,13 @@ csv <- function(x){
   write.csv(x, path, row.names = TRUE)
   system2("open", path)
 }
+
+#' dir
+#'
+#' Opens a specified directory in explorer
+#' @param path path to dir. Defaults to the current working directory
+#' @export
+
+
+dir <- function(path = getwd()){
+  system2("open", path)

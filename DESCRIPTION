@@ -1,6 +1,6 @@
 Package: seeit
 Title: Opens simple data.frames in excel
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person(given = "James",
            family = "Conigrave",
