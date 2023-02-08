@@ -4,10 +4,12 @@
 \alias{sum_clip}
 \title{sum_clip}
 \usage{
-sum_clip(big.mark = TRUE)
+sum_clip(big.mark = TRUE, return_x = FALSE)
 }
 \arguments{
 \item{big.mark}{bool. If TRUE commas are inserted to differentiate long digits}
+
+\item{return_x}{bool. If you want to see the input vector}
 }
 \description{
 Sum values in a clipboard taken from excel'
