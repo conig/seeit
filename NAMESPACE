@@ -2,3 +2,4 @@
 
 export(csv)
 export(d)
+export(fn)

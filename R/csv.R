@@ -20,3 +20,18 @@ csv <- function(x){
  d <- function(path = getwd()){
   system2("open", shQuote(path), invisible = FALSE)
  }
+
+ #' fn
+ #'
+ #' Opens a function as an R script
+ #' @param x a function object (not the name)
+ #' @examples seeit::fn(stats::sd)
+ #' @export
+
+ fn <- function(x){
+   path <- tempfile(fileext = ".R")
+   if(!is(x, "function")) stop("Use the function object, not its name as the input")
+  lines <- paste(capture.output(x), collapse = "\n")
+  write(lines, path)
+   system2("open", shQuote(path))
+ }

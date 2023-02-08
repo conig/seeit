@@ -1,0 +1,4 @@
+Name: OpenWd
+Description: Open the working directory in explorer
+Binding: wd_addin
+Interactive: false
