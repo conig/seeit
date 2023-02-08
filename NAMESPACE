@@ -3,3 +3,4 @@
 export(csv)
 export(d)
 export(fn)
+export(sum_clip)
